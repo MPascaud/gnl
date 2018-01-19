@@ -1,3 +1,7 @@
+
+#include "get_next_line.h"
+#include <stdio.h>
+
 //main simple
 int		main(int argc, char **argv)
 {
@@ -19,7 +23,7 @@ int		main(int argc, char **argv)
 }
 
 //main multi-fd
-int     main(int ac, char **av)
+/*int     main(int ac, char **av)
 {
 	    int     i;
 		int     *fd;
@@ -35,4 +39,4 @@ int     main(int ac, char **av)
 				close(fd[i++]);
 		}
 		return (0);
-}
+}*/
