@@ -1,6 +1,7 @@
 
 #include "get_next_line.h"
 #include <stdio.h>
+#include <fcntl.h>
 
 //main simple
 int		main(int argc, char **argv)
@@ -22,8 +23,18 @@ int		main(int argc, char **argv)
 	return (0);
 }
 
+//main entree standard
+int		main(int ac, char **av)
+{
+	char	*line;
+
+	get_next_line(0, &line);
+	printf("%s\n", line);
+	return (0);
+}
+
 //main multi-fd
-/*int     main(int ac, char **av)
+int     main(int ac, char **av)
 {
 	    int     i;
 		int     *fd;
@@ -39,4 +50,4 @@ int		main(int argc, char **argv)
 				close(fd[i++]);
 		}
 		return (0);
-}*/
+}
